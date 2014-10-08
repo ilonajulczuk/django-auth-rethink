@@ -1,0 +1,11 @@
+rethinkdb:
+  image: dockerfile/rethinkdb
+web:
+  build: .
+  command: rethink_auth/manage.py runserver 0.0.0.0:8000
+  volumes:
+    - .:/home/app
+  ports:
+    - "8000:8000"
+  links:
+    - rethinkdb
