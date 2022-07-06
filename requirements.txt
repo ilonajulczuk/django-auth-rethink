@@ -2,7 +2,7 @@ Django==1.7
 argparse==1.2.1
 chardet==2.0.1
 colorama==0.2.5
-html5lib==0.999
+html5lib==0.999999999
 requests==2.2.1
 rethinkdb==1.15.0-1
 six==1.5.2
